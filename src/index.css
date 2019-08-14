@@ -1,0 +1,63 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.flashCardList {
+    float: left;
+    padding-left: 0px;
+    margin: 5px;
+    list-style-type: none;
+}
+
+.flashCardList > li {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+    width: 100%;
+    max-width: 300px;
+    cursor: pointer;
+}
+
+.flashCardDetail {
+    float:left;
+    margin: 10px;
+    width: 100%;
+    min-height: 150px;
+    max-width: 500px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.flashCardTitle {
+    padding: 5px 0px;
+    background-color: rgb(162, 176, 177);
+    text-align: center;
+    font-weight: bold;
+}
+
+.flashCardQuestion {
+    margin: 20px 0px;
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.flashCardAnswer {
+    margin: 10px 0px;
+    width: 100%;
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+.flip {
+    transition: transform 1s;
+    transform: rotateY(360deg);
+}
